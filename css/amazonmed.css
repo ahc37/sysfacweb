@@ -1,0 +1,48 @@
+
+/* 
+    Created on : 10/01/2017, 05:52:59 PM
+    Author     : Alejandro HERRERA
+*/
+@import url('font-awesome.min.css');
+
+.mTerap {
+	cursor:pointer;
+}
+
+.mTerap:hover {color: #0099FF; text-decoration: none; position: relative; top: 1px; left: 1px;}
+
+.centrar {
+    text-align: center;
+}
+
+.titFirst {
+	color:#00b386 important!;
+	font-size:48px;
+}
+
+.font28 {font-size:28px;}
+.font24 {font-size:24px;}
+.font20 {font-size:20px;}
+.font18 {font-size:18px;}
+.font16 {font-size:16px;}
+.font14 {font-size:14px;}
+.font12 {font-size:12px;}
+
+.parrafo {
+	text-align: justify;
+	color: #444;
+}
+
+.bordeBajo {
+	border-bottom:1px solid #00b386;
+}
+
+@media only screen and (max-width: 600px) {
+	.titFirst {
+		color:#00b386 important!;
+		font-size:28px;
+	}
+
+}
+
+ 
