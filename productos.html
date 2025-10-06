@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>AMAZON MEDICAL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="almacen, acondicionado,farma,inyector">
+		<link rel="shortcut icon" href="images/icons/icono.jpg"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/amazonmed.css">
+		<link href="css/plugins.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">		
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="js/funciones.js"></script>
+		<style>
+			.filtro {
+				font-size: 14px;
+				height:36px;
+			}
+			.filtro::before {
+				content: url('images/ecualizar.jpg');
+				padding-left:10px;			
+			}
+
+
+			.divFiltro {
+				background-color: #eee;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 20px;
+				border: solid 0.5px #999;
+				border-radius:6px;
+			}
+
+			.divFiltro a {
+				cursor: pointer;
+			}
+			
+		</style>
+    </head>
+<body class="breakpoint-xl b--desktop">
+<div class="body-inner">
+
+	<header id="header" data-transparent="true" class="ligthh" style="background-color: rgba(250,250,250,0.6);">
+		<div class="header-inner">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"><span class="logo-default"><img src="images/logo.jpg" style='margin-top:0px;border:0px;height:70px;' alt=""></span></a>
+					<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+						<ul class="navbar-nav mb-2 mb-lg-0">
+							<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+<li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+							<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+							<li class="nav-item"><a class="nav-link" href="#login">LogIn</a></li>	
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<section id="page-title" data-bg-parallax="images/slides/138.jpg">
+		<div class="parallax-container img-loaded" data-bg="images/slides/138.jpg" data-velocity="-.140" style="background: url(&quot;images/slides/138.jpg&quot;);" data-ll-status="loaded"></div>
+		<div class="container">
+			<div class="page-title">
+				<h1>AMAZON MEDICAL SAC</h1>
+				<span>Tu aliado en la gestión de productos farmacéuticos con la máxima eficiencia y profesionalismo.</span>
+			</div>
+		</div>
+	</section>
+
+	
+		<!--
+
+		
+		<div class="container">
+		
+			<div class="col-md-6 navbar-left">
+				<div id="mcat" style="display:flex;"></div>
+				<div id="mfam" style="display:flex;"></div>
+				<div>
+					<input name="colorSet" type="hidden" value="T">
+					<input name="wwcat" type="hidden" value="C01">
+					<input name="bycolor" type="hidden" value="0">
+					<input name="wmaster" type="hidden" value="">
+					<input name="wpagina" type="hidden" value="html" disabled>					
+					<input type="text" name="idColor" value="" class="hidden">
+					<input type="text" name="idImg" value="" class="hidden">
+					<input type="text" name="idnProd" value="" class="hidden">
+					<input type="text" name="idTallas" value="" class="hidden">
+					<input type="text" name="idDesc" value="" class="hidden">
+					<input type="text" name="idMax" value="" class="hidden">
+					<input type="text" name="idMasColores" value="" class="hidden">
+					<input type="hidden" id="titCat" name="titCat" value="C01" >
+					<input type="hidden" id="titFam" name="titFam" value="01" >
+					<input type="hidden" id="titMod" name="titMod" value="" >
+					<span id="tituloCategoria" class="font12"></span>&nbsp;&nbsp;
+					<span id="tituloFamilia" class="font12"></span>&nbsp;&nbsp;
+					<span id="tituloModelo" class="font12"></span>&nbsp;&nbsp;
+				</div>
+			</div>
+			
+			<div class="col-md-6 navbar-right">
+				<div class="col-md-10" style="display:flex;">
+					<a href="#" role="button" class="btn btn-success filtro" onclick="showFiltro();">&nbsp;&nbsp;Filtro</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input name="textobuscar" type="text" class="form-control" placeholder="Buscar">
+					<a id="btnBuscaByName" role="button" class="btn"><img src="images/buscar.ico" width="24"></a>
+				</div>
+			</div>
+		</div>
+		<div id="filtros" class="container divFiltro oculto"></div>
+		-->
+		<br>
+<div class="container">
+  <div id="divMyGallery" class="col-md-12">
+
+  </div>
+</div>  
+
+<!--
+        <footer id="grad1" class="main-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h4 class="h6">Nosotros</h4>
+                        <div class="small text-black-50"><p><script>nosotros();</script></p></div>
+                    </div>
+                    <div class="col-lg-3">
+						<h4 class="h6">Dirección</h4>
+						<div class="small text-black-50"><p><script>miEmpresa();</script></p></div>
+                    </div>
+                    <div class="col-lg-3">
+						<h4 class="h6">Términos y Condiciones</h4>
+						<div class="small text-black-50">
+							<p><a href="terminosycondiciones.html">Condiciones</a></p>
+							<p><a href="terminosycondiciones.html#cambios">Cambios y devoluciones</a></p>
+							<p><a href="terminosycondiciones.html#reclamaciones">Libro de Reclamaciones</a></p>
+						</div>
+                    </div>
+                    <div class="col-lg-3">
+						<script>redes();</script>
+                    </div>
+                </div>
+            </div>
+			
+        </footer>
+-->
+
+	<footer id="footer">
+	
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Síguenos en nuestras Redes Sociales</p>
+      <a href="#" class="btn btn-primary m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>	
+		<div class="copyright-content">
+			<div class="container">
+			<div class="copyright-text text-center">
+				<script>footer();</script>
+			</div>
+			</div>
+		</div>
+	</footer>
+		
+<script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/functions.js"></script>	
+<script src="js/productoss.js"></script>
+			<script>
+				$(function () {
+					$("[data-toggle=popover]").popover();
+				});
+altura();
+			</script>
+</div>
+</body>
+</html>
